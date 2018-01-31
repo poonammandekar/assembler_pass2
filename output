@@ -1,0 +1,193 @@
+list created successfully
+list created successfully
+-----------------------------------------------Symbol Table--------------------------------------------
+sr No.		Name		type		section		status		address		value
+--------------------------------------------------------------------------------------------------
+0		msg		db		D		D		0		addition is %d 
+1		num1		dd		D		D		16		20,30,40,50
+ 
+2		22num2		dd		D		D		32		30
+ 
+3		m		dd		D		M		36		10
+ 
+4		1n		resw		B		U		0		13 
+5		a		resb		B		U		26		20 
+6		1end		label		C		D		0		- 
+-------------------------------------Error Table-------------------------------------------
+-------------------------------------------------------------------------------------------
+22num2 is invalid symbol
+redefinition of m
+1n is invalid symbol
+1end is invalid label
+add1 is invalid mnemonic
+-------------------------------------------------------Register Table---------------------------------------
+srno	Register
+0	eax
+1	ebx
+2	ecx
+3	edx
+4	esi
+5	edi
+6	ebp
+7	esp
+---------------------------------------------opcode table------------------------------------------------------
+0	mov	88	rr8
+1	mov	6689	rr16
+2	mov	89	rr32
+3	mov	A0	rm8
+4	mov	66A1	rm16
+5	mov	A1	rm32
+6	mov	A2	mr8
+7	mov	66A3	mr16
+8	mov	A3	mr32
+9	mov	B0	ri8
+10	mov	66B8	ri16
+11	mov	B8	ri32
+12	mov	C605	mi8
+13	mov	66C705	mi16
+14	mov	C705	mi32
+15	add	00	rr8
+16	add	6601	rr16
+17	add	01	rr32
+18	add	02	rm8
+19	add	6603	rm16
+20	add	03	rm32
+21	add	00	mr8
+22	add	6601	mr16
+23	add	01	mr32
+24	add	04	ri8
+25	add	6683	ri16
+26	add	83	ri32
+27	add	8005	mi8
+28	add	668305	mi16
+29	add	8305	mi32
+30	sub	28	rr8
+31	sub	6629	rr16
+32	sub	29	rr32
+33	sub	2A	rm8
+34	sub	662B	rm16
+35	sub	2B	rm32
+36	sub	28	mr8
+37	sub	6629	mr16
+38	sub	29	mr32
+39	sub	26	ri8
+40	sub	661234	ri16
+41	sub	34	ri32
+42	sub	802D	mi8
+43	sub	66832D	mi16
+44	sub	832D	mi32
+45	and	20	rr8
+46	and	6621	rr16
+47	and	21	rr32
+48	and	22	rm8
+49	and	6623	rm16
+50	and	23	rm32
+51	and	20	mr8
+52	and	6621	mr16
+53	and	21	mr32
+54	and	24	ri8
+55	and	83	ri16
+56	and	6683	ri32
+57	and	8025	mi8
+58	and	668325	mi16
+59	and	8325	mi32
+60	or	08	rr8
+61	or	6609	rr16
+62	or	09	rr32
+63	or	08	rm8
+64	or	660B	rm16
+65	or	0B	rm32
+66	or	08	mr8
+67	or	6609	mr16
+68	or	09	mr32
+69	or	0C	ri8
+70	or	6683	ri16
+71	or	83	ri32
+72	or	800D	mi8
+73	or	66830D	mi16
+74	or	830D	mi32
+75	xor	30	rr8
+76	xor	6631	rr16
+77	xor	31	rr32
+78	xor	32	rm8
+79	xor	6633	rm16
+80	xor	33	rm32
+81	xor	30	mr8
+82	xor	6631	mr16
+83	xor	31	mr32
+84	xor	34	ri8
+85	xor	6683	ri16
+86	xor	83	ri32
+87	xor	8035	mi8
+88	xor	668335	mi16
+89	xor	8335	mi32
+90	cmp	38	rr8
+91	cmp	6639	rr16
+92	cmp	39	rr32
+93	cmp	3A	rm8
+94	cmp	663B	rm16
+95	cmp	3B	rm32
+96	cmp	38	mr8
+97	cmp	6639	mr16
+98	cmp	39	mr32
+99	cmp	3C	ri8
+100	cmp	6683	ri16
+101	cmp	83	ri32
+102	cmp	803D	mi8
+103	cmp	66833D	mi16
+104	cmp	833D	mi32
+105	mul	F6	r8
+106	mul	66F7	r16
+107	mul	F7	r32
+108	mul	F625	m8
+109	mul	66F725	m16
+110	mul	F725	m32
+111	div	F6	r8
+112	div	66F7	r16
+113	div	F7	r32
+114	div	F635	m8
+115	div	66F735	m16
+116	div	F735	m32
+117	not	F6	r8
+118	not	66F7	r16
+119	not	F7	r32
+120	not	F615	m8
+121	not	66F715	m16
+122	not	F715	m32
+123	neg	F6	r8
+124	neg	66F7	r16
+125	neg	F7	r32
+126	neg	F61D	m8
+127	neg	66F71D	m16
+128	neg	F71D	m32
+129	inc	FE	r8
+130	inc	6640	r16
+131	inc	40	r32
+132	inc	FE05	m8
+133	inc	66FF05	m16
+134	inc	FF05	m32
+135	dec	FE	r8
+136	dec	6648	r16
+137	dec	48	r32
+138	dec	FE0D	m8
+139	dec	66FF0D	m16
+140	dec	FF0D	m32
+141	jmp	EB	
+142	jl	7C	
+143	jg	7F	
+144	jle	7E	
+145	jge	7D	
+146	je	74	
+147	jne	75	
+148	ret	C3	
+149	loop	E2	
+150	lodsb	AC	
+151	stosb	AA	
+152	cmpsb	A6	
+153	std	FD	
+154	cld	FC	
+155	movsb	A4	
+156	scasb	AE	
+157	call	E8	
+158	push	68	
+159	push	68	

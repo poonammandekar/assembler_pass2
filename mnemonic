@@ -1,0 +1,159 @@
+mov rr8 88
+mov rr16 6689
+mov rr32 89
+mov rm8 A0
+mov rm16 66A1
+mov rm32 A1
+mov mr8 A2
+mov mr16 66A3
+mov mr32 A3
+mov ri8 B0
+mov ri16 66B8
+mov ri32 B8
+mov mi8 C605
+mov mi16 66C705
+mov mi32 C705
+add rr8 00
+add rr16 6601
+add rr32 01
+add rm8 02
+add rm16 6603
+add rm32 03
+add mr8 00
+add mr16 6601
+add mr32 01
+add ri8 04
+add ri16 6683
+add ri32 83
+add mi8 8005 
+add mi16 668305
+add mi32 8305
+sub rr8 28
+sub rr16 6629
+sub rr32 29
+sub rm8 2A
+sub rm16 662B
+sub rm32 2B
+sub mr8 28
+sub mr16 6629
+sub mr32 29
+sub ri8 26
+sub ri16 661234
+sub ri32 34
+sub mi8 802D
+sub mi16 66832D
+sub mi32 832D
+and rr8 20
+and rr16 6621
+and rr32 21
+and rm8 22
+and rm16 6623
+and rm32 23
+and mr8 20
+and mr16 6621
+and mr32 21
+and ri8 24
+and ri16 83
+and ri32 6683
+and mi8 8025
+and mi16 668325
+and mi32 8325
+or rr8 08
+or rr16 6609
+or rr32 09
+or rm8 08
+or rm16 660B
+or rm32 0B
+or mr8 08
+or mr16 6609
+or mr32 09
+or ri8 0C
+or ri16 6683
+or ri32 83
+or mi8 800D
+or mi16 66830D
+or mi32 830D
+xor rr8 30
+xor rr16 6631
+xor rr32 31
+xor rm8 32
+xor rm16 6633
+xor rm32 33
+xor mr8 30
+xor mr16 6631
+xor mr32 31
+xor ri8 34
+xor ri16 6683
+xor ri32 83
+xor mi8 8035
+xor mi16 668335
+xor mi32 8335
+cmp rr8 38
+cmp rr16 6639
+cmp rr32 39
+cmp rm8 3A
+cmp rm16 663B
+cmp rm32 3B
+cmp mr8 38
+cmp mr16 6639
+cmp mr32 39
+cmp ri8 3C
+cmp ri16 6683
+cmp ri32 83
+cmp mi8 803D
+cmp mi16 66833D
+cmp mi32 833D
+mul r8 F6
+mul r16 66F7
+mul r32 F7
+mul m8 F625
+mul m16 66F725
+mul m32 F725
+div r8 F6
+div r16 66F7
+div r32 F7
+div m8 F635
+div m16 66F735
+div m32 F735
+not r8 F6
+not r16 66F7
+not r32 F7
+not m8 F615
+not m16 66F715
+not m32 F715
+neg r8 F6
+neg r16 66F7
+neg r32 F7
+neg m8 F61D
+neg m16 66F71D
+neg m32 F71D
+inc r8 FE
+inc r16 6640
+inc r32 40
+inc m8 FE05
+inc m16 66FF05
+inc m32 FF05
+dec r8 FE
+dec r16 6648
+dec r32 48
+dec m8 FE0D
+dec m16 66FF0D
+dec m32 FF0D
+jmp EB
+jl 7C
+jg 7F
+jle 7E
+jge 7D
+je 74
+jne 75
+ret C3
+loop E2
+lodsb AC
+stosb AA
+cmpsb A6
+std FD
+cld FC
+movsb A4
+scasb AE
+call E8
+push 68

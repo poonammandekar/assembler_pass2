@@ -1,0 +1,14 @@
+1.createopcode.c creates opcode table
+2.createsymboltable.c creates symboltable
+3.invalidsymbol.c handels errors related to symbols
+4.intermediate.c file contains code to generate intermediate code
+5.input.asm is an errorneous file as a i/p to the program to show all possible errors.
+6.output file contains output with errors.
+7.intermediate is an accurate input file to generate intermediate code
+8.intermediate code is generated for file intermediate
+9.errors are generated from file input input.asm
+10.to run program type make on terminal
+11.and then run file by typing ./testBinary 
+12.output1 file contains output with intermediate code.
+13.This file generate pass2 assembler.
+14.it genetate upto the intermediate code.

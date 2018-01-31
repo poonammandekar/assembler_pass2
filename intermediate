@@ -1,0 +1,19 @@
+section .data
+	msg db "addition is %d",10,0
+	num1 dd 20,30,40,50
+	num2 dd 30
+	m dd 10
+section .bss
+	n resw 13
+	a resb 2
+section .text
+	global main
+	extern printf
+main:
+	mov ecx,dword[num1]
+	mov ebx,dword[num2]
+	add ecx,ebx
+        mov dword[m],edx
+        jmp end
+end:
+        ret
